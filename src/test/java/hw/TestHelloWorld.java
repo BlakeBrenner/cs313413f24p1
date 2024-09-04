@@ -41,12 +41,14 @@ public class TestHelloWorld {
   @Test
   public void getMessageInList() { // this test is broken - fix it!
     var list = Arrays.asList(fixture);
+    //changed index in get to 0 to stop out of bounds
     assertEquals("hello world", list.get(0).getMessage());
   }
 
   @Test
   public void getYearInList() { // this test is broken - fix it!
     var list = Arrays.asList(fixture);
+    //changed index in get to 0 to stop out of bounds
     assertEquals(2024, list.get(0).getYear());
   }
 }
